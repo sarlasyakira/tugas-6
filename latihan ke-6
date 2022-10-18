@@ -1,0 +1,93 @@
+nomer 1
+/* ------------------------------ */
+/* Program dengan pernyataan goto */
+/* ------------------------------ */
+#include <iostream>
+using namespace std;
+int main()
+{
+  int a,b;
+  char lagi;
+  atas:
+  //clrscr
+  cout <<"Masukkan bilangan = ";
+  cin>>a;
+  b = a%2;
+  printf ("Nilai %d %% 2 adalah = %d", a, b);
+  printf ("\n\nIngin Hitung Lagi [Y/T]:");
+  cin>>lagi;
+  if (lagi == 'Y' || lagi == 'y');{
+    goto atas;
+  }
+  if (lagi == 'T' || lagi == 't');{
+    goto akhir;
+  }
+  akhir:
+  return 0;
+}
+
+nomer 2
+#include<iostream>
+using namespace std;
+int main()
+{
+ int a=1,b=19,n;
+ for(a=a;a<=b;a+=2)
+ {                          
+  cout<<a;
+  if(a<b)
+  {
+   cout<<" + ";
+  }
+ }
+ cout<<" = ";
+ n=b/2;
+ n=n*(n+1);
+ cout<<n;
+   return 0;
+}
+
+nomer 3
+#include<iostream>
+using namespace std;
+int main()
+{
+ int a=2,b=20,n;
+ for(a=a;a<=b;a+=2)
+ {                          
+  cout<<a;
+  if(a<b)
+  {
+   cout<<" + ";
+  }
+ }
+ cout<<" = ";
+ n=b/2;
+ n=n*(n+1);
+ cout<<n;
+   return 0;
+}
+
+nomer 4
+/* ----------------------------- */
+/* Perulangan FOR dengan break; */
+/* ----------------------------- */
+#include <iostream>
+using namespace std;
+int main() {
+  int a = 3, b = 2, c = 1, bil;
+  system("clear");
+  printf("Bil-A | Bil-B | Bil-C\n");
+  printf("-----------------------");
+  for (bil = 1; bil <= 10; ++bil) 
+  {
+    a += b;
+    b += c;
+    c += 2;
+    printf("\n%d \t| %d \t| %d", a, b, c);
+    if (c == 13){
+      break;
+  }
+}
+getchar();
+}
